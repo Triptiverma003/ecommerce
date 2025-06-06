@@ -7,8 +7,9 @@ import (
 	"net/http"
 	"time"
 
-	database "github.com/Triptiverma003/ecommerce-go/DataBase"
-	"github.com/Triptiverma003/ecommerce-go/models"
+	database "github.com/Triptiverma003/ecommerce/database"
+	"github.com/Triptiverma003/ecommerce/models"
+	 generate "github.com/Triptiverma003/ecommerce/tokens"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 	"go.mongodb.org/mongo-driver/bson"

@@ -4,10 +4,10 @@ import (
 	"log"
 	"os"
 
-	"github.com/Triptiverma003/ecommerce-go/database"
-	"github.com/Triptiverma003/ecommerce-go/controllers"
-	"github.com/Triptiverma003/ecommerce-go/middleware"
-	"github.com/Triptiverma003/ecommerce-go/routes"
+	"github.com/Triptiverma003/ecommerce/database"
+	"github.com/Triptiverma003/ecommerce/controllers"
+	"github.com/Triptiverma003/ecommerce/middleware"
+	"github.com/Triptiverma003/ecommerce/routes"
 	"github.com/gin-gonic/gin"
 )
 

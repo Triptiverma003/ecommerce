@@ -1,0 +1,36 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <map>
+#include <unordered_map>
+
+using namespace std;
+
+class Solution {
+public:
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+        unordered_map<string, vector<string>> mp;
+
+        for (const string& word : strs) {
+            map<char, int> freq;
+            for (char c : word) {
+                freq[tolower(c)]++;
+            }
+
+            // Serialize the frequency map into a string key
+            string key;
+            for (auto& p : freq) {
+                key += p.first;
+                key += to_string(p.second);
+            }
+
+            mp[key].push_back(word);
+        }
+
+        vector<vector<string>> result;
+        for (auto& pair : mp) {
+            result.push_back(pair.second);
+        }
+        return result;
+    }
+};
